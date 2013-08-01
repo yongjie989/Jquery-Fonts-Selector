@@ -1,0 +1,33 @@
+<html>
+<head>
+    <script src="fabric.all.min.js" ></script>
+    <script src="jquery-1.10.2.min.js"></script> 
+    <style type="text/css">
+        
+        @font-face {
+            font-family: "myfont1";
+            font-style: normal;
+            font-weight: 400;
+            src: url(http://wenq.org/cloud/logo/wqy-yunlogo.ttf) ;
+        }
+    </style>
+    
+<body>
+        <canvas id="c" style="border:1px solid ;" ></canvas>
+        <p class="customfont">ABCDEFGHJISDFSDF</p>
+</body>
+ 
+<script>
+$(function () {
+    var canvas = new fabric.Canvas('c');
+    var hi = new fabric.Text('·É®üì®ì¦', {
+        left: 50,
+        top: 10,
+        fontFamily: 'myfont1',
+        textShadow: 'rgba(0,0,0,0.3) 5px 5px 5px'
+    });
+    canvas.add(hi);
+});
+</script>
+</head>
+</html>
